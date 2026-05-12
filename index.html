@@ -9,57 +9,89 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    
+    <!--ajout du script global javascript-->
+    <script src="./JavaScript/global.js"></script>
 </head>
 <body>
     <header>
-        <a href="./index.html" alt="retour à la page principale" class="headerButton" id="leftHeaderButton">CONTACTS</a>
-        <svg class="decorativeCross" id="firstLeftDecorativeCross" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="27.5" y1="2.18557e-08" x2="27.5" y2="54" stroke="#B8B8B8"/>
-            <line x1="54" y1="27.5" x2="-4.37114e-08" y2="27.5" stroke="#B8B8B8"/>
-        </svg>
-        <svg class="decorativeCross" id="lastLeftDecorativeCross" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="27.5" y1="2.18557e-08" x2="27.5" y2="54" stroke="#B8B8B8"/>
-            <line x1="54" y1="27.5" x2="-4.37114e-08" y2="27.5" stroke="#B8B8B8"/>
-        </svg>
+        <!--hiden button, shown only when screen width <= 500 -->
+        <svg id="menu" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="openCloseNav(event)"><path d="M24 12C12 12 12 12 12 24C12 12 12 12 0 12C12 12 12 12 12 0C12 12 12 12 24 12Z" fill="black"/></svg>
+        <!--header's button-->
+        <a href="./index.html" alt="retour à la page principale" class="headerButton" id="leftHeaderButton">LILIAN CHEVREMONT</a>
         <a href="./Projects.html" class="headerButton"id="centerHeaderButton">PROJETS</a>
-        <svg class="decorativeCross" id="firstRightDecorativeCross" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="27.5" y1="2.18557e-08" x2="27.5" y2="54" stroke="#B8B8B8"/>
-            <line x1="54" y1="27.5" x2="-4.37114e-08" y2="27.5" stroke="#B8B8B8"/>
-        </svg>
-        <svg class="decorativeCross" id="lastRightDecorativeCross" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="27.5" y1="2.18557e-08" x2="27.5" y2="54" stroke="#B8B8B8"/>
-            <line x1="54" y1="27.5" x2="-4.37114e-08" y2="27.5" stroke="#B8B8B8"/>
-        </svg>
         <a href="./Contacts.html" class="headerButton"id="rightHeaderButton">CONTACTS</a>
+        <!--SVG: cross-->
+        <svg class="cross" width="1226" height="54" viewBox="0 0 1226 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="451.5" y1="2.18557e-08" x2="451.5" y2="54" stroke="#B8B8B8"/>
+            <line x1="478" y1="27.5" x2="424" y2="27.5" stroke="#B8B8B8"/>
+            <line x1="27.5" y1="2.18557e-08" x2="27.5" y2="54" stroke="#B8B8B8"/>
+            <line x1="54" y1="27.5" x2="-4.37114e-08" y2="27.5" stroke="#B8B8B8"/>
+            <line x1="775.5" y1="2.18557e-08" x2="775.5" y2="54" stroke="#B8B8B8"/>
+            <line x1="802" y1="27.5" x2="748" y2="27.5" stroke="#B8B8B8"/>
+            <line x1="1199.5" y1="2.18557e-08" x2="1199.5" y2="54" stroke="#B8B8B8"/>
+            <line x1="1226" y1="27.5" x2="1172" y2="27.5" stroke="#B8B8B8"/>
+        </svg>
     </header>
-    <figure class="container">
-        <div></div>
-        <div></div>
-        <div class="middle">a</div>
-        <div></div>
-        <div></div>
-        <div class="middle"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="middle"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="middle"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="middle"></div>
-        <div></div>
-        <div></div>
-        <div class="middle"></div>
-        <div></div>
-        <div></div>
-    </figure>
+    <nav id="navigation" role="menu" hidden>
+        <ul>
+            <li><a href="./index.html" alt="retour à la page principale" class="headerButton" id="leftHeaderButton">LILIAN CHEVREMONT</a></li>
+            <li><a href="./Projects.html" class="headerButton"id="centerHeaderButton">PROJETS</a></li>
+            <li><a href="./Contacts.html" class="headerButton"id="rightHeaderButton">CONTACTS</a></li>
+        </ul> 
+    </nav>
+    <table class="projectsGrid">
+        <tr class="firstRow">
+            <td class="borderCells">
+                <figure class="textBox">
+                    <h1>tennis woman</h1>
+                    <label>prog | 00/00/000</label>
+                </figure>
+                <img src="./Images/Ben.png" alt="">
+            </td>
+            <td class="sideCells"></td>
+            <td class="middleCells"></td>
+            <td class="sideCells"></td>
+            <td class="borderCells"></td>
+        </tr>
+        <tr>
+            <td class="borderCells"></td>
+            <td class="sideCells"></td>
+            <td class="middleCells">
+                <figure class="textBox">
+                    <h2>tennis woman</h2>
+                    <label>prog | 00/00/000</label>
+                </figure>
+                <img src="./Images/Ben.png" alt="">
+            </td>
+            <td class="sideCells"></td>
+            <td class="borderCells"></td>
+        </tr>
+        <tr>
+            <td class="borderCells"></td>
+            <td class="sideCells"></td>
+            <td class="middleCells"></td>
+            <td class="sideCells"></td>
+            <td class="borderCells">
+                <figure class="textBox">
+                    <h3>tennis woman</h3>
+                    <label>prog | 00/00/000</label>
+                </figure>
+                <img src="./Images/Ben.png" alt="">
+            </td>
+        </tr>
+        <tr class="lastRow">
+            <td class="borderCells">
+                <figure class="textBox">
+                    <h4>tennis woman</h4>
+                    <label>prog | 00/00/000</label>
+                </figure>
+                <img src="./Images/Ben.png" alt="">
+            </td>
+            <td class="sideCells"></td>
+            <td class="middleCells"></td>
+            <td class="sideCells"></td>
+            <td class="borderCells"></td>
+        </tr>
+    </table>
 </body>
 </html>
