@@ -138,10 +138,35 @@ body label,body h1,body h2,body h3,body h4{
     color:#cacaca;
     text-decoration: none;
 }
+
+footer{
+    justify-content: center;
+    display: flex;
+    margin:0;
+    padding: 3ch 0 3ch 0;
+    font-size: 1em;
+}
+
+footer a{
+    
+    color:#cacaca;
+    font-family: 'Inter';
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0 3ch 0 3ch 0;
+}
+
+footer a:hover{
+    color:black
+}
+
 @media (max-width: 1000px) {
     header #leftHeaderButton {left: 1ch;}
     header #rightHeaderButton {right: 1ch;}
     header .cross{
         visibility: hidden;
+    }
+    footer{
+        padding: 5ch 0 3ch 0;
     }
 }
