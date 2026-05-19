@@ -29,6 +29,7 @@ header {
     padding: 15px 5ch;
     padding-bottom: 3.5ch;
     padding-top:3ch;
+    margin: 15px;
 }
 
 header .cross {
@@ -40,13 +41,13 @@ header .headerButton {
     display:block;
     color:black;
     font-family: 'Inter';
-    font-size: 1em;
+    font-size: 12px;
     text-decoration: none;
     cursor: pointer;
     position: absolute;
 }
-header #leftHeaderButton {left: 2ch;}
-header #rightHeaderButton {right: 2ch;}
+header #leftHeaderButton {left: 4ch;}
+header #rightHeaderButton {right: 4ch;}
 header .headerButton:hover {color:darkgray;}
 body table{
     display: table;
@@ -61,11 +62,11 @@ body td{
     border: 1px solid #cacaca;
     padding: 0;
 }
-body .middleCells{ width: 26ch;}
+body .middleCells{ width: 26ch;height: 200px;}
 body .sideCells{ width: 34ch;}
 body .borderCells{ width: 32ch;}
-body .firstRow{ border-top: hidden;}
-body .lastRow{ border-bottom: hidden;}
+body .firstRow{ border-top: hidden; height: 100px;}
+body .lastRow{ border-bottom: hidden; height: 100px;}
 body img{
     display: block;
     padding: 0;
@@ -144,7 +145,7 @@ footer{
     display: flex;
     margin:0;
     padding: 3ch 0 3ch 0;
-    font-size: 1em;
+    font-size: 10px;
 }
 
 footer a{
